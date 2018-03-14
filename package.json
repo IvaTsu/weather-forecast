@@ -1,0 +1,81 @@
+{
+  "name": "weather-forecat",
+  "version": "1.0.0",
+  "description": "Weather forecasting",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build-dev": "babel-node server.js",
+    "build-prod": "webpack && babel-node server.js",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvaTsu/weather-forecast.git"
+  },
+  "keywords": [
+    "BOOK",
+    "READ",
+    "DESCRIPTION"
+  ],
+  "author": "Ivan Tsud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvaTsu/weather-forecast/issues"
+  },
+  "homepage": "https://github.com/IvaTsu/weather-forecast#readme",
+  "dependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-runtime": "^6.26.0",
+    "dotenv": "^5.0.1",
+    "eslint": "^4.13.0",
+    "express": "^4.16.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^0.28.7",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.40.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.2.1",
+    "postcss-color-function": "^4.0.1",
+    "postcss-css-variables": "^0.8.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.0.9",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "precss": "^2.0.0",
+    "prettier-eslint": "^8.2.5",
+    "react-hot-loader": "^3.0.0",
+    "react-test-renderer": "^16.2.0",
+    "redux-logger": "^3.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.10.0",
+    "webpack-config": "^7.5.0",
+    "webpack-dev-middleware": "^1.12.2",
+    "webpack-hot-middleware": "^2.21.0"
+  }
+}

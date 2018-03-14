@@ -1,0 +1,37 @@
+/* -------------------------------------
+    1. Base variables
+ ---------------------------------------
+    HTML Root Font Size (in percentages)
+    Set's up your rem-based units. 62.5% == 10px, 100% == 16px
+*/
+
+$root_font_size: 62.5% !default;
+
+/*
+    Baseline Height
+    Used for vertical rhythm and baseline grids
+*/
+
+$base_line_height: 1.5 !default;
+
+/*
+    Base Font-Size
+*/
+
+$base_font_size: 1.6rem !default;
+
+/*
+    Base Container
+*/
+
+$container_width: 75%;
+
+/* -------------------------------------
+    2. Colors
+ ---------------------------------------
+    The values should be presented in HEX with UPPERCASE symbols
+    Color can be darken or lighten using the "postcss-color-function" postCSS plugin: https://github.com/postcss/postcss-color-function
+*/
+
+$cl_gray: #D3D3D3;
+$cl_gray_light: color($cl_gray lightness(80%));
