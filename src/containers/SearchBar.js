@@ -8,15 +8,18 @@ class SearchBar extends Component {
 	}
 
 	_onInputChange = (event) => {
-		console.log(event.target.value);
 		this.setState({
 			searchTerm: event.target.value,
 		});
 	}
 
+	_onFormSubmit = (event) => {
+		event.preventDefault();
+	}
+
 	render() {
 		return (
-			<form>
+			<form onSubmit={this._onFormSubmit}>
 				<input
 					placeholder="Enter city name"
 					value={this.state.searchTerm}
