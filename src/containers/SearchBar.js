@@ -19,6 +19,7 @@ class SearchBar extends Component {
 	_onFormSubmit = (event) => {
 		event.preventDefault();
 		fetchWeather(this.state.searchTerm);
+		this.setState({ searchTerm: '' }); // clearing the input field
 	}
 
 	render() {
