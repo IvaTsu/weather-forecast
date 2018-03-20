@@ -1,10 +1,9 @@
-import FETCH_WEATHER from './../actions/index';
+import { combineReducers } from 'redux';
 
-export default (state = null, action) => {
-	switch (action.type) {
-	case FETCH_WEATHER:
-		return action.payload;
-	default:
-		return state;
-	}
-};
+import WeatherReducer from './weatherReducer';
+
+const rootReducer = combineReducers({
+	weather: WeatherReducer,
+});
+
+export default rootReducer;
