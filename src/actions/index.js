@@ -2,17 +2,17 @@ import axios from 'axios';
 
 const API_KEY = 'ac2004b69a87c7c911eafb924337175e';
 const ROOT_URL = `https://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
-
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 
-export const fetchWeather = (city) => {
-	const url = `${ROOT_URL}&q=${city},us`;
-	const request = axios.get(url)
-		.then(response => console.log(response))
-		.catch(error => console.log(error));
+const fetchWeatherSuccess = response => ({
+	type: FETCH_WEATHER,
+	payload: response,
+});
 
-	return {
-		type: FETCH_WEATHER,
-		payload: request,
-	};
+
+export const fetchWeather = city => (dispatch) => {
+	const url = `${ROOT_URL}&q=${city},us`;
+	axios.get(url)
+		.then(response => dispatch(fetchWeatherSuccess(response.data.city)))
+		.catch(error => error);
 };
