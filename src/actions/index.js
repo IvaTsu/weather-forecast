@@ -13,6 +13,6 @@ const fetchWeatherSuccess = response => ({
 export const fetchWeather = city => (dispatch) => {
 	const url = `${ROOT_URL}&q=${city},us`;
 	axios.get(url)
-		.then(response => dispatch(fetchWeatherSuccess(response.data.city)))
+		.then(response => dispatch(fetchWeatherSuccess(response.data)))
 		.catch(error => error);
 };
